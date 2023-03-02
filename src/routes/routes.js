@@ -8,7 +8,7 @@ const productCOntroller = require('../controllers/products')
 //DELETE - remover dados
 //PET - altera um campo
 
-router.get('/products',productCOntroller.get)
+router.get('/products/:id?',productCOntroller.get)
 //router.post('/products',productCOntroller.post)
 //router.put('/products/:id',productCOntroller.put)
 //router.delete('/products/:id',productCOntroller.delete)
