@@ -10,7 +10,7 @@ const productCOntroller = require('../controllers/products')
 
 router.get('/products/:id?',productCOntroller.get)
 router.post('/products',productCOntroller.post)
-//router.put('/products/:id',productCOntroller.put)
+router.put('/products/:id',productCOntroller.put)
 //router.delete('/products/:id',productCOntroller.delete)
 
 module.exports = router
