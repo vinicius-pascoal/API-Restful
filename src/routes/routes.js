@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const productCOntroller = require('../controllers/products')
+const productController = require('../controllers/products')
 
 //verbos http (4 tipos)
 //GET - obter dadoos
@@ -8,9 +8,9 @@ const productCOntroller = require('../controllers/products')
 //DELETE - remover dados
 //PET - altera um campo
 
-router.get('/products/:id?',productCOntroller.get)
-router.post('/products',productCOntroller.post)
-router.put('/products/:id',productCOntroller.put)
-router.delete('/products/:id',productCOntroller.remove)
+router.get('/products/:id?', productController.get)
+router.post('/products', productController.post)
+router.put('/products/:id', productController.put)
+router.delete('/products/:id', productController.remove)
 
 module.exports = router
